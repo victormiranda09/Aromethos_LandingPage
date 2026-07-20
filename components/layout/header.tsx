@@ -6,7 +6,7 @@ export default function Header(){
     return(
         <header className = "absolute inset-x-0 top-0 z-50 px-8 py-8">
             <div className="mx-auto flex items-center justify-between">
-                <Link href="/" className="flex items-center gap-2">
+                <Link href="/not-found" className="flex items-center gap-2">
 
                     <Image src="/images/logo.png"
                             alt="Logo"
@@ -15,7 +15,7 @@ export default function Header(){
                             priority
                             className="h-10 w-auto"
                             />
-                            <span className="text-2xl tracking-widest uppercase text-[#C69C53]"
+                            <span className="sm:text-xl md:text-2xl tracking-[2px] uppercase text-[#C69C53]"
                                     style={{fontFamily: "var(--font-cinzel)"}}>
                                     Aromethos
                             </span>
@@ -23,7 +23,7 @@ export default function Header(){
 
                 <div className="flex items-center gap-5 text-[#C69C53]">
 
-                    <a href="https://instagram.com/teu_perfil" target="_blank" rel="noopener noreferrer">
+                    <a href="https://instagram.com/aromethos" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="h-6 w-6 cursor-pointer transition hover:scale-130"/>
                     </a>
 
@@ -31,7 +31,7 @@ export default function Header(){
                     <FaFacebook className="h-6 w-6 cursor-pointer transition hover:scale-130"/>
                     </a>
 
-                    <a href="mailto:teuemail@email.com" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:aromethos.info@gmail.com" target="_blank" rel="noopener noreferrer">
                     <FaEnvelope className="h-6 w-6 cursor-pointer transition hover:scale-130"/>
                     </a>
                     

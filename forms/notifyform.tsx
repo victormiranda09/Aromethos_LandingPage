@@ -3,6 +3,7 @@
 import { useForm } from "react-hook-form"
 import { useState } from "react"
 import { zodResolver } from "@hookform/resolvers/zod";
+import Link from "next/link";
 
 
 import { notifySchema, NotifyFormData } from "@/lib/validation/notifySchema";
@@ -82,6 +83,15 @@ export default function NotifyForm({onSuccess} : NotifyFormProps){
                             {isSubmitting ? "A enviar..." : "Quero ser avisado"}
                         </span>
             </button>
+            <p className="mt-4 text-center text-xs leading-4 text-neutral-500">
+                Ao Inscrever-se, concordas em receber comunicações da Aromethos
+                <br/>
+                Consulte a nossa {""}
+                <Link href = "/privacy-policy"
+                className = "text-[#C69C53] hover:underline">
+                    Política de Privacidade
+                </Link>.
+            </p>
 
             </div>
         </form>

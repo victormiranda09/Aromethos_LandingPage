@@ -12,13 +12,13 @@ export const metadata: Metadata = {
    ],
    openGraph: {
     title: "Aromethos",
-    description: "Onde o aroma carrega séculos",
-    images: ["/images/og-images.jpg"]
+    description: "",
+    images: ["/images/logo_aromethos.jpg"]
    },
 
    twitter: {
     card: "summary_large_image",
-    images: ["/images/og-images.jpg"]
+    images: ["/images/logo_aromethos.jpg"]
    },
 
    authors: [{ name: "Victor Miranda"}]

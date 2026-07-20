@@ -6,9 +6,9 @@ export default function Header(){
     return(
         <header className = "absolute inset-x-0 top-0 z-50 px-8 py-8">
             <div className="mx-auto flex items-center justify-between">
-                <Link href="/not-found" className="flex items-center gap-2">
+                <Link href="/" className="flex items-center gap-2">
 
-                    <Image src="/images/logo.png"
+                    <Image src="/images/logo_att.png"
                             alt="Logo"
                             width={120}
                             height={40}

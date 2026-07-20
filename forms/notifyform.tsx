@@ -88,6 +88,7 @@ export default function NotifyForm({onSuccess} : NotifyFormProps){
                 <br/>
                 Consulte a nossa {""}
                 <Link href = "/privacy-policy"
+                target="_blank"
                 className = "text-[#C69C53] hover:underline">
                     Política de Privacidade
                 </Link>.

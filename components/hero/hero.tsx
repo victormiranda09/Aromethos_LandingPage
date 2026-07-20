@@ -31,14 +31,14 @@ export default function Hero(){
             {/* Conteúdo */}
             <div className="w-full max-w-5xl text-center">
 
-                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl uppercase text-[#C69C53]"
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl uppercase text-[#C69C53]"
                     style={{fontFamily: "var(--font-cinzel)"}}>
                     Aromethos
                 </h1>
                 
-                <p className="mt text-lg sm:text-xl md:text-2xl lg:text-3xl italic text-[#E7D2AA] px-4"
+                <p className="mt text-lg sm:text-xl md:text-3xl lg:text-4xl italic text-[#E7D2AA] px-4"
                     style={{fontFamily: "var(--font-cormorant)"}}>
-                    Onde o aroma carrega séculos
+                    O Sabor da História
                 </p>
 
                 <div className="my-3 flex items-center justify-center gap-4">

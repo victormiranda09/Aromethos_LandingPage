@@ -1,10 +1,15 @@
 import { NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
 
+import { Resend } from "resend";
+import ConfirmationEmail from "@/emails/confirmationemail";
+
+const resend = new Resend(process.env.RESEND_API_KEY)
+
 export async function POST(request: Request) {
   try {
     const { name, email } = await request.json();
-
+  
     const { error } = await supabase
       .from("subscribers")
       .insert({
@@ -22,6 +27,15 @@ export async function POST(request: Request) {
           { status: 409 }
         );
       }
+
+      await resend.emails.send({
+        from: "Aromethos <hello@aromethos.com>",
+        to: email,
+        subject: "Bem-vindo à viagem da Aromethos ✦",
+        react: ConfirmationEmail({
+          name,
+        }),
+      });
 
       return NextResponse.json(
         {

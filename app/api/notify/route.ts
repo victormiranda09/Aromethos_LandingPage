@@ -28,15 +28,6 @@ export async function POST(request: Request) {
         );
       }
 
-      await resend.emails.send({
-        from: "Aromethos <hello@aromethos.com>",
-        to: email,
-        subject: "Bem-vindo à viagem da Aromethos ✦",
-        react: ConfirmationEmail({
-          name,
-        }),
-      });
-
       return NextResponse.json(
         {
           success: false,
@@ -45,6 +36,15 @@ export async function POST(request: Request) {
         { status: 500 }
       );
     }
+
+    await resend.emails.send({
+        from: "Aromethos <hello@aromethos.com>",
+        to: email,
+        subject: "✦ Bem-vindo à Aromethos ✦",
+        react: ConfirmationEmail({
+          name,
+        }),
+      });
 
     return NextResponse.json({
       success: true,
